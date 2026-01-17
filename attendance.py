@@ -6,8 +6,8 @@ if len(sys.argv) == 3:
 
 else:
     script_name = sys.argv[0]
-    classes_held = 100
-    classes_attended = 80
+    classes_held = input("Enter number of classes held: ")
+    classes_attended = input("Enter number of classes attended: ")
     percentage = (int(classes_attended) / int(classes_held)) * 100
 
     if percentage >= 75:
