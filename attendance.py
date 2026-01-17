@@ -9,14 +9,16 @@ else:
     classes_held = 100
     classes_attended = 80
     percentage = (int(classes_attended) / int(classes_held)) * 100
-    
+
     if percentage >= 75:
+        print("Eligible")
         status = "Eligible"
     else:
+        print("Not Eligible")
         status = "Not Eligible"
     
     print("Script Name:", script_name)
     print("Classes Held:", classes_held)
     print("Classes Attended:", classes_attended)
     print("Attendance Percentage:", percentage)
-    print("Status:", status)
+    print("Print Status:", status)
